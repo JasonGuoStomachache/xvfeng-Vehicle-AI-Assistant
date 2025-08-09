@@ -1,0 +1,89 @@
+2025-05-05 21:13:38.693 INFO [pid-2473] @run.py:34 Loading data...
+323715it [00:13, 24217.46it/s]
+10053it [00:00, 26846.56it/s]
+1332it [00:00, 33491.27it/s]
+2025-05-05 21:13:52.476 INFO [pid-2473] @run.py:40 Time usage: 0:00:14
+2025-05-05 21:13:53.710 INFO [pid-2473] @train_eval.py:34 Epoch [1/3]
+2025-05-05 21:13:59.818 INFO [pid-2473] @train_eval.py:56 Iter:     99,  Train Loss:  0.22,  Train Acc: 91.41%,  Val Loss:   0.2,  Val Acc: 92.41%,  Time: 0:00:07 *
+2025-05-05 21:14:05.919 INFO [pid-2473] @train_eval.py:56 Iter:    199,  Train Loss:  0.14,  Train Acc: 95.31%,  Val Loss:  0.18,  Val Acc: 92.77%,  Time: 0:00:13 *
+2025-05-05 21:14:12.056 INFO [pid-2473] @train_eval.py:56 Iter:    299,  Train Loss:  0.17,  Train Acc: 92.97%,  Val Loss:  0.18,  Val Acc: 93.65%,  Time: 0:00:19 *
+2025-05-05 21:14:18.201 INFO [pid-2473] @train_eval.py:56 Iter:    399,  Train Loss:  0.12,  Train Acc: 96.09%,  Val Loss:  0.14,  Val Acc: 94.63%,  Time: 0:00:25 *
+2025-05-05 21:14:24.038 INFO [pid-2473] @train_eval.py:56 Iter:    499,  Train Loss:  0.14,  Train Acc: 95.31%,  Val Loss:  0.13,  Val Acc: 95.09%,  Time: 0:00:31 *
+2025-05-05 21:14:30.157 INFO [pid-2473] @train_eval.py:56 Iter:    599,  Train Loss:  0.18,  Train Acc: 92.19%,  Val Loss:  0.13,  Val Acc: 95.02%,  Time: 0:00:37 *
+2025-05-05 21:14:36.331 INFO [pid-2473] @train_eval.py:56 Iter:    699,  Train Loss:  0.11,  Train Acc: 95.31%,  Val Loss:  0.12,  Val Acc: 95.39%,  Time: 0:00:44 *
+2025-05-05 21:14:42.190 INFO [pid-2473] @train_eval.py:56 Iter:    799,  Train Loss:  0.13,  Train Acc: 94.53%,  Val Loss:  0.12,  Val Acc: 95.18%,  Time: 0:00:49 
+2025-05-05 21:14:48.294 INFO [pid-2473] @train_eval.py:56 Iter:    899,  Train Loss:  0.19,  Train Acc: 92.97%,  Val Loss:  0.11,  Val Acc: 95.59%,  Time: 0:00:55 *
+2025-05-05 21:14:54.431 INFO [pid-2473] @train_eval.py:56 Iter:    999,  Train Loss: 0.072,  Train Acc: 97.66%,  Val Loss:  0.11,  Val Acc: 95.85%,  Time: 0:01:02 *
+2025-05-05 21:15:00.532 INFO [pid-2473] @train_eval.py:56 Iter:   1099,  Train Loss:  0.13,  Train Acc: 91.41%,  Val Loss:  0.11,  Val Acc: 95.73%,  Time: 0:01:08 *
+2025-05-05 21:15:06.414 INFO [pid-2473] @train_eval.py:56 Iter:   1199,  Train Loss:  0.13,  Train Acc: 96.09%,  Val Loss:  0.11,  Val Acc: 95.94%,  Time: 0:01:14 *
+2025-05-05 21:15:12.461 INFO [pid-2473] @train_eval.py:56 Iter:   1299,  Train Loss:   0.1,  Train Acc: 96.88%,  Val Loss:  0.11,  Val Acc: 95.97%,  Time: 0:01:20 
+2025-05-05 21:15:18.603 INFO [pid-2473] @train_eval.py:56 Iter:   1399,  Train Loss: 0.087,  Train Acc: 95.31%,  Val Loss:   0.1,  Val Acc: 96.29%,  Time: 0:01:26 *
+2025-05-05 21:15:24.605 INFO [pid-2473] @train_eval.py:56 Iter:   1499,  Train Loss:   0.1,  Train Acc: 96.88%,  Val Loss:   0.1,  Val Acc: 95.98%,  Time: 0:01:32 
+2025-05-05 21:15:30.365 INFO [pid-2473] @train_eval.py:56 Iter:   1599,  Train Loss:  0.15,  Train Acc: 92.97%,  Val Loss:   0.1,  Val Acc: 96.13%,  Time: 0:01:38 *
+2025-05-05 21:15:36.395 INFO [pid-2473] @train_eval.py:56 Iter:   1699,  Train Loss:  0.16,  Train Acc: 93.75%,  Val Loss:  0.11,  Val Acc: 95.91%,  Time: 0:01:44 
+2025-05-05 21:15:42.526 INFO [pid-2473] @train_eval.py:56 Iter:   1799,  Train Loss:  0.09,  Train Acc: 96.88%,  Val Loss:   0.1,  Val Acc: 96.07%,  Time: 0:01:50 
+2025-05-05 21:15:48.462 INFO [pid-2473] @train_eval.py:56 Iter:   1899,  Train Loss:  0.18,  Train Acc: 92.19%,  Val Loss:   0.1,  Val Acc: 96.06%,  Time: 0:01:56 
+2025-05-05 21:15:54.416 INFO [pid-2473] @train_eval.py:56 Iter:   1999,  Train Loss: 0.066,  Train Acc: 97.66%,  Val Loss:   0.1,  Val Acc: 96.27%,  Time: 0:02:02 
+2025-05-05 21:16:00.588 INFO [pid-2473] @train_eval.py:56 Iter:   2099,  Train Loss: 0.094,  Train Acc: 96.09%,  Val Loss: 0.099,  Val Acc: 96.20%,  Time: 0:02:08 *
+2025-05-05 21:16:06.771 INFO [pid-2473] @train_eval.py:56 Iter:   2199,  Train Loss:  0.12,  Train Acc: 96.88%,  Val Loss: 0.097,  Val Acc: 96.17%,  Time: 0:02:14 *
+2025-05-05 21:16:12.595 INFO [pid-2473] @train_eval.py:56 Iter:   2299,  Train Loss: 0.097,  Train Acc: 95.31%,  Val Loss:   0.1,  Val Acc: 96.01%,  Time: 0:02:20 
+2025-05-05 21:16:18.803 INFO [pid-2473] @train_eval.py:56 Iter:   2399,  Train Loss: 0.087,  Train Acc: 98.44%,  Val Loss: 0.093,  Val Acc: 96.46%,  Time: 0:02:26 *
+2025-05-05 21:16:24.943 INFO [pid-2473] @train_eval.py:56 Iter:   2499,  Train Loss: 0.091,  Train Acc: 96.88%,  Val Loss: 0.093,  Val Acc: 96.31%,  Time: 0:02:32 
+2025-05-05 21:16:26.312 INFO [pid-2473] @train_eval.py:34 Epoch [2/3]
+2025-05-05 21:16:30.973 INFO [pid-2473] @train_eval.py:56 Iter:   2599,  Train Loss:  0.11,  Train Acc: 94.53%,  Val Loss: 0.096,  Val Acc: 96.40%,  Time: 0:02:38 
+2025-05-05 21:16:36.707 INFO [pid-2473] @train_eval.py:56 Iter:   2699,  Train Loss: 0.058,  Train Acc: 97.66%,  Val Loss: 0.091,  Val Acc: 96.47%,  Time: 0:02:44 *
+2025-05-05 21:16:42.830 INFO [pid-2473] @train_eval.py:56 Iter:   2799,  Train Loss:  0.02,  Train Acc: 100.00%,  Val Loss: 0.091,  Val Acc: 96.49%,  Time: 0:02:50 *
+2025-05-05 21:16:48.950 INFO [pid-2473] @train_eval.py:56 Iter:   2899,  Train Loss:  0.06,  Train Acc: 98.44%,  Val Loss: 0.093,  Val Acc: 96.46%,  Time: 0:02:56 
+2025-05-05 21:16:54.857 INFO [pid-2473] @train_eval.py:56 Iter:   2999,  Train Loss: 0.041,  Train Acc: 99.22%,  Val Loss: 0.093,  Val Acc: 96.45%,  Time: 0:03:02 
+2025-05-05 21:17:00.978 INFO [pid-2473] @train_eval.py:56 Iter:   3099,  Train Loss: 0.079,  Train Acc: 96.88%,  Val Loss: 0.096,  Val Acc: 96.57%,  Time: 0:03:08 
+2025-05-05 21:17:07.172 INFO [pid-2473] @train_eval.py:56 Iter:   3199,  Train Loss:  0.18,  Train Acc: 92.97%,  Val Loss: 0.087,  Val Acc: 96.54%,  Time: 0:03:14 *
+2025-05-05 21:17:13.280 INFO [pid-2473] @train_eval.py:56 Iter:   3299,  Train Loss: 0.082,  Train Acc: 96.88%,  Val Loss:  0.09,  Val Acc: 96.53%,  Time: 0:03:20 
+2025-05-05 21:17:19.009 INFO [pid-2473] @train_eval.py:56 Iter:   3399,  Train Loss: 0.065,  Train Acc: 96.88%,  Val Loss: 0.093,  Val Acc: 96.65%,  Time: 0:03:26 
+2025-05-05 21:17:24.065 INFO [pid-2473] @train_eval.py:56 Iter:   3499,  Train Loss: 0.079,  Train Acc: 96.88%,  Val Loss: 0.089,  Val Acc: 96.60%,  Time: 0:03:31 
+2025-05-05 21:17:29.147 INFO [pid-2473] @train_eval.py:56 Iter:   3599,  Train Loss:  0.13,  Train Acc: 94.53%,  Val Loss:  0.09,  Val Acc: 96.59%,  Time: 0:03:36 
+2025-05-05 21:17:34.012 INFO [pid-2473] @train_eval.py:56 Iter:   3699,  Train Loss:  0.06,  Train Acc: 97.66%,  Val Loss: 0.097,  Val Acc: 96.36%,  Time: 0:03:41 
+2025-05-05 21:17:39.812 INFO [pid-2473] @train_eval.py:56 Iter:   3799,  Train Loss:  0.14,  Train Acc: 95.31%,  Val Loss: 0.089,  Val Acc: 96.53%,  Time: 0:03:47 
+2025-05-05 21:17:44.182 INFO [pid-2473] @train_eval.py:56 Iter:   3899,  Train Loss:  0.05,  Train Acc: 98.44%,  Val Loss: 0.086,  Val Acc: 96.69%,  Time: 0:03:51 *
+2025-05-05 21:17:50.233 INFO [pid-2473] @train_eval.py:56 Iter:   3999,  Train Loss: 0.057,  Train Acc: 97.66%,  Val Loss: 0.092,  Val Acc: 96.40%,  Time: 0:03:57 
+2025-05-05 21:17:56.308 INFO [pid-2473] @train_eval.py:56 Iter:   4099,  Train Loss:  0.16,  Train Acc: 94.53%,  Val Loss: 0.091,  Val Acc: 96.68%,  Time: 0:04:03 
+2025-05-05 21:18:02.083 INFO [pid-2473] @train_eval.py:56 Iter:   4199,  Train Loss: 0.054,  Train Acc: 97.66%,  Val Loss: 0.086,  Val Acc: 96.81%,  Time: 0:04:09 
+2025-05-05 21:18:07.565 INFO [pid-2473] @train_eval.py:56 Iter:   4299,  Train Loss: 0.084,  Train Acc: 96.88%,  Val Loss: 0.094,  Val Acc: 96.47%,  Time: 0:04:15 
+2025-05-05 21:18:13.617 INFO [pid-2473] @train_eval.py:56 Iter:   4399,  Train Loss:  0.12,  Train Acc: 96.09%,  Val Loss:  0.09,  Val Acc: 96.71%,  Time: 0:04:21 
+2025-05-05 21:18:19.594 INFO [pid-2473] @train_eval.py:56 Iter:   4499,  Train Loss:  0.12,  Train Acc: 93.75%,  Val Loss:  0.09,  Val Acc: 96.77%,  Time: 0:04:27 
+2025-05-05 21:18:25.267 INFO [pid-2473] @train_eval.py:56 Iter:   4599,  Train Loss:  0.11,  Train Acc: 96.09%,  Val Loss: 0.099,  Val Acc: 96.45%,  Time: 0:04:32 
+2025-05-05 21:18:31.555 INFO [pid-2473] @train_eval.py:56 Iter:   4699,  Train Loss:  0.11,  Train Acc: 94.53%,  Val Loss: 0.086,  Val Acc: 96.69%,  Time: 0:04:39 
+2025-05-05 21:18:37.516 INFO [pid-2473] @train_eval.py:56 Iter:   4799,  Train Loss: 0.041,  Train Acc: 99.22%,  Val Loss: 0.089,  Val Acc: 96.69%,  Time: 0:04:45 
+2025-05-05 21:18:43.521 INFO [pid-2473] @train_eval.py:56 Iter:   4899,  Train Loss: 0.072,  Train Acc: 96.88%,  Val Loss: 0.086,  Val Acc: 96.79%,  Time: 0:04:51 *
+2025-05-05 21:18:49.252 INFO [pid-2473] @train_eval.py:56 Iter:   4999,  Train Loss:   0.1,  Train Acc: 96.09%,  Val Loss:  0.09,  Val Acc: 96.50%,  Time: 0:04:56 
+2025-05-05 21:18:51.887 INFO [pid-2473] @train_eval.py:34 Epoch [3/3]
+2025-05-05 21:18:55.168 INFO [pid-2473] @train_eval.py:56 Iter:   5099,  Train Loss: 0.083,  Train Acc: 97.66%,  Val Loss: 0.085,  Val Acc: 96.88%,  Time: 0:05:02 *
+2025-05-05 21:19:01.156 INFO [pid-2473] @train_eval.py:56 Iter:   5199,  Train Loss:   0.1,  Train Acc: 96.88%,  Val Loss: 0.085,  Val Acc: 96.89%,  Time: 0:05:08 *
+2025-05-05 21:19:07.131 INFO [pid-2473] @train_eval.py:56 Iter:   5299,  Train Loss: 0.072,  Train Acc: 98.44%,  Val Loss:  0.09,  Val Acc: 96.59%,  Time: 0:05:14 
+2025-05-05 21:19:12.922 INFO [pid-2473] @train_eval.py:56 Iter:   5399,  Train Loss:  0.04,  Train Acc: 98.44%,  Val Loss: 0.086,  Val Acc: 96.77%,  Time: 0:05:20 
+2025-05-05 21:19:18.982 INFO [pid-2473] @train_eval.py:56 Iter:   5499,  Train Loss:  0.12,  Train Acc: 96.88%,  Val Loss: 0.087,  Val Acc: 96.73%,  Time: 0:05:26 
+2025-05-05 21:19:25.086 INFO [pid-2473] @train_eval.py:56 Iter:   5599,  Train Loss: 0.088,  Train Acc: 97.66%,  Val Loss: 0.094,  Val Acc: 96.72%,  Time: 0:05:32 
+2025-05-05 21:19:31.023 INFO [pid-2473] @train_eval.py:56 Iter:   5699,  Train Loss: 0.079,  Train Acc: 96.88%,  Val Loss:  0.09,  Val Acc: 96.74%,  Time: 0:05:38 
+2025-05-05 21:19:36.371 INFO [pid-2473] @train_eval.py:56 Iter:   5799,  Train Loss:  0.14,  Train Acc: 96.09%,  Val Loss: 0.085,  Val Acc: 96.92%,  Time: 0:05:44 
+2025-05-05 21:19:42.540 INFO [pid-2473] @train_eval.py:56 Iter:   5899,  Train Loss: 0.083,  Train Acc: 96.88%,  Val Loss: 0.084,  Val Acc: 96.91%,  Time: 0:05:50 *
+2025-05-05 21:19:48.647 INFO [pid-2473] @train_eval.py:56 Iter:   5999,  Train Loss: 0.053,  Train Acc: 98.44%,  Val Loss: 0.085,  Val Acc: 96.78%,  Time: 0:05:56 
+2025-05-05 21:19:54.521 INFO [pid-2473] @train_eval.py:56 Iter:   6099,  Train Loss: 0.097,  Train Acc: 96.09%,  Val Loss:   0.1,  Val Acc: 96.32%,  Time: 0:06:02 
+2025-05-05 21:20:00.565 INFO [pid-2473] @train_eval.py:56 Iter:   6199,  Train Loss: 0.068,  Train Acc: 96.09%,  Val Loss: 0.091,  Val Acc: 96.70%,  Time: 0:06:08 
+2025-05-05 21:20:06.623 INFO [pid-2473] @train_eval.py:56 Iter:   6299,  Train Loss: 0.031,  Train Acc: 98.44%,  Val Loss: 0.085,  Val Acc: 96.84%,  Time: 0:06:14 
+2025-05-05 21:20:12.755 INFO [pid-2473] @train_eval.py:56 Iter:   6399,  Train Loss: 0.049,  Train Acc: 97.66%,  Val Loss: 0.087,  Val Acc: 96.78%,  Time: 0:06:20 
+2025-05-05 21:20:18.692 INFO [pid-2473] @train_eval.py:56 Iter:   6499,  Train Loss: 0.025,  Train Acc: 99.22%,  Val Loss: 0.087,  Val Acc: 96.83%,  Time: 0:06:26 
+2025-05-05 21:20:24.753 INFO [pid-2473] @train_eval.py:56 Iter:   6599,  Train Loss: 0.073,  Train Acc: 97.66%,  Val Loss: 0.083,  Val Acc: 96.93%,  Time: 0:06:32 *
+2025-05-05 21:20:30.797 INFO [pid-2473] @train_eval.py:56 Iter:   6699,  Train Loss: 0.065,  Train Acc: 99.22%,  Val Loss: 0.084,  Val Acc: 96.91%,  Time: 0:06:38 
+2025-05-05 21:20:36.765 INFO [pid-2473] @train_eval.py:56 Iter:   6799,  Train Loss:  0.12,  Train Acc: 95.31%,  Val Loss: 0.086,  Val Acc: 96.82%,  Time: 0:06:44 
+2025-05-05 21:20:42.295 INFO [pid-2473] @train_eval.py:56 Iter:   6899,  Train Loss:  0.04,  Train Acc: 98.44%,  Val Loss: 0.093,  Val Acc: 96.53%,  Time: 0:06:49 
+2025-05-05 21:20:48.396 INFO [pid-2473] @train_eval.py:56 Iter:   6999,  Train Loss: 0.056,  Train Acc: 97.66%,  Val Loss: 0.088,  Val Acc: 96.74%,  Time: 0:06:56 
+2025-05-05 21:20:54.457 INFO [pid-2473] @train_eval.py:56 Iter:   7099,  Train Loss: 0.081,  Train Acc: 96.88%,  Val Loss: 0.089,  Val Acc: 96.75%,  Time: 0:07:02 
+2025-05-05 21:21:00.292 INFO [pid-2473] @train_eval.py:56 Iter:   7199,  Train Loss: 0.038,  Train Acc: 98.44%,  Val Loss: 0.089,  Val Acc: 96.74%,  Time: 0:07:07 
+2025-05-05 21:21:06.443 INFO [pid-2473] @train_eval.py:56 Iter:   7299,  Train Loss:  0.11,  Train Acc: 95.31%,  Val Loss: 0.088,  Val Acc: 96.73%,  Time: 0:07:14 
+2025-05-05 21:21:12.559 INFO [pid-2473] @train_eval.py:56 Iter:   7399,  Train Loss: 0.059,  Train Acc: 97.66%,  Val Loss: 0.086,  Val Acc: 96.85%,  Time: 0:07:20 
+2025-05-05 21:21:18.518 INFO [pid-2473] @train_eval.py:56 Iter:   7499,  Train Loss: 0.074,  Train Acc: 96.88%,  Val Loss: 0.088,  Val Acc: 96.78%,  Time: 0:07:26 
+2025-05-05 21:21:22.587 INFO [pid-2473] @train_eval.py:72 ==================================================
+2025-05-05 21:21:22.864 INFO [pid-2473] @train_eval.py:78 Precision: 0.9110576923076923
+2025-05-05 21:21:22.864 INFO [pid-2473] @train_eval.py:79 Recall: 0.9110576923076923
+2025-05-05 21:21:22.864 INFO [pid-2473] @train_eval.py:80 F1: 0.9110576923076923
+2025-05-05 21:21:22.864 INFO [pid-2473] @train_eval.py:81 Accuracy: 0.9114114114114115
+2025-05-05 21:21:22.864 INFO [pid-2473] @train_eval.py:86 Time usage: 0:00:00

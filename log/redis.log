@@ -1,0 +1,8 @@
+6087:C 10 May 2025 22:44:56.706 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+6087:C 10 May 2025 22:44:56.707 # Redis version=6.0.8, bits=64, commit=00000000, modified=0, pid=6087, just started
+6087:C 10 May 2025 22:44:56.707 # Warning: no config file specified, using the default config. In order to specify a config file use ./redis-6.0.8/src/redis-server /path/to/redis.conf
+6087:M 10 May 2025 22:44:56.707 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+6087:M 10 May 2025 22:44:56.708 * Running mode=standalone, port=6379.
+6087:M 10 May 2025 22:44:56.708 # Server initialized
+6087:M 10 May 2025 22:44:56.708 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+6087:M 10 May 2025 22:44:56.710 * Ready to accept connections

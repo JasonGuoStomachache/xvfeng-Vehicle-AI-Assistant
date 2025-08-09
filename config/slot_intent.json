@@ -1,0 +1,731 @@
+{
+    "Complains_And_Suggestions": "无",
+    "Close_Owner_Service": "无",
+    "Close_Help": "无",
+    "Close_Feedback": "无",
+    "Open_Owner_Service": "无",
+    "Open_Help": "无",
+    "Open_Feedback": "无",
+    "Download_App": { "app": "应用"},
+    "Close_APP_Store": "无",
+    "Open_APP_Store": "无",
+    "Close_AutoHold": "无",
+    "Close_Engine_AutoStop": "无",
+    "Open_AutoHold": "无",
+    "Open_Engine_AutoStop": "无",
+    "Close_Air_Cleaner": "无",
+    "Open_Air_Cleaner": "无",
+    "Cancel_Wind_Direction": {"Direction": "位置"},
+    "Close_Air_Condition": {"Position": "位置"},
+    "Close_Air_Condition_Auto_Mode":{"Position": "位置"},
+    "Close_AC": "无",
+    "Close_Cooling": "无",
+    "Close_Heating": "无",
+    "Close_Cooling_Instant": "无",
+    "Close_Air_Condition_Sync": {"Position": "位置"},
+    "Close_Wind_Auto_Mode": "无",
+    "Close_Air_Condition_Defog": {"Position": "位置"},
+    "Close_External_Circulation": "无",
+    "Close_Internal_Circulation": "无",
+    "Dec_Air_Condition_Temperature": {
+            "Position": "位置",
+            "Number": "number",
+            "Ratio": "ratio"
+    },
+    "Dec_Air_Condition_Wind": {
+            "Position": "位置",
+            "Number": "number",
+            "Ratio": "ratio"
+    },
+    "Inc_Air_Condition_Temperature": {
+            "Position": "位置",
+            "Number": "number",
+            "Ratio": "ratio"
+    },
+    "Open_Heating_Instant": "无",
+    "Inc_Air_Condition_Wind": {
+            "Position": "位置",
+            "Number": "number",
+            "Ratio": "ratio"
+    },
+    "Open_Air_Condition": {"Position": "位置"},
+    "Open_Air_Condition_Auto_Mode": {"Position": "位置"},
+    "Open_AC": "无",
+    "Open_Cooling": "无",
+    "Open_Heating": "无",
+    "Open_Cooling_Instant": "无",
+    "Open_Air_Condition_Sync": {"Position": "位置"},
+    "Open_Wind_Auto_Mode": "无",
+    "Open_Air_Condition_Defog": {"Position": "位置"},
+    "Open_External_Circulation": "无",
+    "Open_Internal_Circulation": "无",
+    "Set_Air_Condition_Temperature": {
+        "Position": "位置",
+        "Number": "number",
+        "Ratio": "ratio",
+        "Extreme": "Extreme"
+    },
+    "Set_Air_Condition_Wind": {
+        "Position": "位置",
+        "Number": "number",
+        "Ratio": "ratio",
+        "Extreme": "Extreme"
+    },
+    "Set_Wind_Direction": {"Direction": "位置"},
+    "Close_Surround_View": "无",
+    "Open_Surround_View": "无",
+    "Set_Surround_View": {"Camera": "VIEW"},
+    "Close_Wireless_Charge": "无",
+    "Open_Wireless_Charge": "无",
+    "Close_DashCam": "无",
+    "Open_DashCam": "无",
+    "Record_Audio": "无",
+    "Record_Video": "无",
+    "Stop_Audio": "无",
+    "Stop_Video": "无",
+    "Take_Photo": "无",
+    "Close_Dormer": "无",
+    "Open_Dormer": "无",
+    "Set_Driving_Mode": {"Mode": "驾驶模式"},
+    "Close_Env_Light": "无",
+    "Close_Env_Light_Auto_Mode": "无",
+    "Dec_Env_Light_Brightness": {
+            "Number": "number",
+            "Ratio": "ratio"
+    },
+    "Inc_Env_Light_Brightness": {
+            "Number": "number",
+            "Ratio": "ratio"
+    },
+    "Open_Env_Light": "无",
+    "Open_Env_Light_Auto_Mode": "无",
+    "Set_Env_Light_Brightness": {
+        "Number": "number",
+        "Ratio": "ratio",
+        "Extreme": "Extreme"
+    },
+    "Set_Env_Light_Color": {"Color": "COLOR"},
+    "Set_Env_Light_Theme": {"Theme": "THEME"},
+    "Close_ADAPTIVE_HEAPLAMP": "无",
+    "Close_Fog_Light": "无",
+    "Close_Front_Fog_Light": "无",
+    "Close_Headlamp": "无",
+    "Close_High_Beam": "无",
+    "Close_Low_Beam": "无",
+    "Close_Marker_Light": "无",
+    "Close_Back_Fog_Light": "无",
+    "Open_ADAPTIVE_HEAPLAMP": "无",
+    "Open_Fog_Light": "无",
+    "Open_Front_Fog_Light": "无",
+    "Open_Headlamp": "无",
+    "Open_High_Beam": "无",
+    "Open_Low_Beam": "无",
+    "Open_Marker_Light": "无",
+    "Open_Back_Fog_Light": "无",
+    "Close_Heated_Seat": {"Position": "位置"},
+    "Dec_Seat_Temperature": {
+        "Position": "位置",
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Inc_Seat_Temperature": {
+        "Position": "位置",
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Open_Heated_Seat": {"Position": "位置"},
+    "Set_Seat_Temperature": {
+        "Position": "位置",
+        "Number": "number",
+        "Ratio": "ratio",
+        "Extreme": "Extreme"
+    },
+    "Adjust_HUD_Horizon": {"Direction": "水平方向"},
+    "Adjust_HUD_Vert": {"Direction": "垂直方向"},
+    "Close_HUD": "无",
+    "Dec_HUD_Brightness": "无",
+    "Inc_HUD_Brightness": "无",
+    "Open_HUD": "无",
+    "Adjust_Hud_Brightness": {"level": "number"},
+    "Close_Reading_Light": "无",
+    "Open_Reading_Light": "无",
+    "Close_Rearview_Mirror": "无",
+    "Close_Rearview_Mirror_Heating": "无",
+    "Open_Rearview_Mirror": "无",
+    "Open_Rearview_Mirror_Heating": "无",
+    "Close_Seat_Massage": {"Position": "位置"},
+    "Dec_Seat_Massage": {
+        "Position": "位置",
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Inc_Seat_Massage": {
+        "Position": "位置",
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Open_Seat_Massage": {"Position": "位置"},
+    "Set_Seat_Massage": {
+        "Position": "位置",
+        "Number": "number",
+        "Ratio": "ratio",
+        "Extreme": "Extreme"
+    },
+    "Adjust_Seat_Long": {"Direction": "水平方向"},
+    "Adjust_Seat_Vert": {"Direction": "垂直方向"},
+    "Close_Seat_Ventilation": {"Position": "位置"},
+    "Dec_Seat_Ventilation": {
+        "Position": "位置",
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Inc_Seat_Ventilation": {
+        "Position": "位置",
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Open_Seat_Ventilation": {"Position": "位置"},
+    "Set_Seat_Ventilation": {
+        "Position": "位置",
+        "Number": "number",
+        "Ratio": "ratio",
+        "Extreme": "Extreme"
+    },
+    "Close_Heated_Steer": "无",
+    "Dec_Steer_Temperature": {
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Inc_Steer_Temperature": {
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Open_Heated_Steer": "无",
+    "Set_Steer_Temperature": {
+        "Number": "number",
+        "Ratio": "ratio",
+        "Extreme": "Extreme"
+    },
+    "Close_Sunshade": "无",
+    "Open_Sunshade": "无",
+    "Close_Air_Condition_APP": "无",
+    "Open_Air_Condition_APP": "无",
+    "Close_Trunk": "无",
+    "Open_Trunk": "无",
+    "Close_Window": {"Position": "位置"},
+    "Close_Window_Diagonal": "无",
+    "Open_Window": {"Position": "位置"},
+    "Open_Window_Diagonal": "无",
+    "Set_Window": {
+        "Position": "位置",
+        "Ratio": "ratio"
+    },
+    "Close_Wiper": "无",
+    "Open_Wiper": "无",
+    "Play_BT_Music": "无",
+    "Ask_Date": "无",
+    "Ask_Weekday": "无",
+    "Close_Calendar": "无",
+    "Open_Calendar": "无",
+    "Display_Remaining_Flow": "无",
+    "Close_APP_Rank": "无",
+    "Close_Flow_Center": "无",
+    "Open_APP_Rank": "无",
+    "Open_Flow_Center": "无",
+    "Unknown": "无",
+    "Close_Long_Video": "无",
+    "Open_Long_Video": "无",
+    "Close_Play_Detail": {"Media_Source": "媒体源"},
+    "Open_Play_Detail": {"Media_Source": "媒体源"},
+    "Download_Current_Content": "无",
+    "Close_Play_History": {"Media_Source": "媒体源"},
+    "Open_Play_History": {"Media_Source": "媒体源"},
+    "Play_History": {"Media_Source": "媒体源"},
+    "Cancel_Media_Collect": {"Media_Source": "媒体源"},
+    "Media_Collect": {"Media_Source": "媒体源"},
+    "Quick_Go": {"Media_Source": "媒体源", "Time": "起始时间"},
+    "Continue_Play": {"Media_Source": "媒体源"},
+    "Media_Last": "无",
+    "Media_Next": "无",
+    "Media_Pause": {"Media_Source": "媒体源"},
+    "Get_exact_time_For_Play": {"time": "起始时间"},
+    "Replay": "无",
+    "Quick_Back": {"Media_Source": "媒体源", "Time": "起始时间"},
+    "Close_Media_Collection": {"Media_Source": "媒体源"},
+    "Open_Media_Collection": {"Media_Source": "媒体源"},
+    "Close_Player": {"Media_Source": "媒体源"},
+    "Open_Player": {"Media_Source": "媒体源"},
+    "Close_Play_List": {"Media_Source": "媒体源"},
+    "Open_Play_List": {"Media_Source": "媒体源"},
+    "Play_Media_Collection": {"Collect_Source": "媒体收藏源"},
+    "Cancel_Play_Mode": "无",
+    "Change_Play_Mode": "无",
+    "Media_Order_Play": "无",
+    "Media_Random_Play": "无",
+    "Play_repeatly": "无",
+    "View_Play_Music_Singer": {},
+    "View_Play_Content": {"Just": "Just"},
+    "View_Play_Frequency": {"Just": "Just"},
+    "View_Play_News": {"Just": "Just"},
+    "View_Play_Radio": {"Just": "Just"},
+    "View_Play_Music": {"Just": "Just"},
+    "Close_Message": "无",
+    "Open_Message": "无",
+    "View_All_Message": "无",
+    "View_Unread_Message": "无",
+    "Close_Mini_App": {"Mini_app": "小程序"},
+    "Close_Mini_App_Center": "无",
+    "Open_Mini_App": {"Mini_app": "小程序"},
+    "Open_Mini_App_Center": "无",
+    "Close_lyrics": "无",
+    "Open_lyrics": "无",
+    "Play_Online_Music": "无",
+    "Play_Similar_Music": "无",
+    "Close_Play_Similar_Music": "无",
+    "Switch_Music_Quantity": { "Quantity": "音质"},
+    "Close_Commute_Nav": "无",
+    "Open_Commute_Nav": "无",
+    "Close_Electronic_Eye": "无",
+    "Open_Electronic_Eye": "无",
+    "Close_Safety_Alarm": "无",
+    "Open_Safety_Alarm": "无",
+    "Ask_Where": "无",
+    "Close_Nav_Collections": "无",
+    "Collect_Current_Location": "无",
+    "Collect_Target_Location": "无",
+    "Open_Nav_Collections": "无",
+    "Nav_To_Collection": "无",
+    "Go_Home": "无",
+    "Go_Company": "无",
+    "Nav_Set_Home": {"家POI": "POI", "index": "选项"},
+    "Nav_Set_Company": {"公司POI": "POI", "index": "选项"},
+    "Open_Nav": "无",
+    "Switch_Main_Route": "无",
+    "Switch_Side_Route": "无",
+    "Change_Nav_Sign": "无",
+    "Head_Up": "无",
+    "2D_Map": "无",
+    "3D_Map": "无",
+    "Close_Cruise_Information": "无",
+    "Open_Cruise_Information": "无",
+    "Close_Map_Setting": "无",
+    "Open_Map_Setting": "无",
+    "Nav_Zoom_In": "无",
+    "Nav_Zoom_In_Max": "无",
+    "Nav_Zoom_Out": "无",
+    "Nav_Zoom_Out_Min": "无",
+    "North_Up": "无",
+    "Set_Map": "无",
+    "Change_Route": "无",
+    "Front_Line_Detail": "无",
+    "Close_Small_Map": "无",
+    "Get_Route_Information": {"Target": "POI"},
+    "Back_Center": "无",
+    "Close_Nav_Broadcast": "无",
+    "Close_Full_Map": "无",
+    "View_Small_Map": "无",
+    "Flush_Route": "无",
+    "Open_Nav_Broadcast": "无",
+    "Close_Nav": "无",
+    "Open_Full_Map": "无",
+    "Replay_Broadcast": "无",
+    "Traffic_Incidents": "无",
+    "Ahead_Condition": {"POI": "POI"},
+    "Target_Condition": "无",
+    "Home_Condition": "无",
+    "Company_Condition": "无",
+    "POI_Condition": {"POI": "POI"},
+    "Avoid_Congestion": "无",
+    "Avoid_High_Way": "无",
+    "Avoid_Limit_Line": "无",
+    "Cancel_Avoid_Congestion": "无",
+    "Cancel_Avoid_High_Way": "无",
+    "Cancel_Avoid_Limit_Line": "无",
+    "Cancel_High_Way_First": "无",
+    "Cancel_Main_First": "无",
+    "Cancel_Avoid_Fee": "无",
+    "Cancel_Smart_Recommend": "无",
+    "Cancel_Speed_Fast": "无",
+    "High_Way_First": "无",
+    "Main_Route_First": "无",
+    "Open_Avoid_Fee": "无",
+    "Smart_Recommend": "无",
+    "Speed_Fast": "无",
+    "Close_AR_Nav": "无",
+    "Close_Simple_Broadcast": "无",
+    "Open_AR_Nav": "无",
+    "Open_Simple_Broadcast": "无",
+    "Ask_Meeting_Place": "无",
+    "Build_Group": "无",
+    "Go_Meeting_Place": "无",
+    "Group_Member_Location": "无",
+    "Join_Group": "无",
+    "Open_Group": "无",
+    "Quit_Group": "无",
+    "Delete_Via": "无",
+    "Oil_Price": "无",
+    "Open_Radio_By_Name": {"Name": "电台名称"},
+    "Play_OL_Radio": "无",
+    "Play_Hot_Radio": "无",
+    "Set_Speed_By_Speed": {"speed": "播放倍速"},
+    "Close_Order_Center": "无",
+    "Open_Order_Center": "无",
+    "View_All_Order": "无",
+    "View_Already_Order": "无",
+    "View_Unend_Order": "无",
+    "Record_Face": "无",
+    "Close_Personal_Center": "无",
+    "Open_Personal_Center": "无",
+    "View_Call_Record": "无",
+    "View_Send_Record": "无",
+    "View_Not_Call": "无",
+    "View_Already_Call": "无",
+    "Get_Contact": "无",
+    "Sync_Contact": "无",
+    "Answer_Phone": "无",
+    "Reject_Phone": "无",
+    "Silent_Phone": "无",
+    "Open_Phone": "无",
+    "Call_Phone": "无",
+    "Call_Back": "无",
+    "Call_Phone_By_Contact": {"Contact": "联系人"},
+    "Call_Phone_By_Contact_Label": {
+        "Contact": "联系人",
+        "label": "号码标签"
+    },
+    "Call_Emergency": {
+        "Emergency": "紧急电话"
+    },
+    "Call_Number": {
+        "Phone_Number": "联系电话"
+    },
+    "Call_Yellow_Page": {
+        "Yellow": "黄页电话"
+    },
+    "Call_Select_SubStr": {
+        "SubStr": "号码子串"
+    },
+    "Quit_Phone": "无",
+    "Close_Scene_Center": "无",
+    "Open_Scene_Center": "无",
+    "Close_Preset_Scene": {
+        "Scene": "场景"
+    },
+    "Close_Snooze_Mode": "无",
+    "Close_Snooze_Mode_Fuzzy": "无",
+    "Open_Preset_Scene": {
+        "Scene": "场景"
+    },
+    "Open_Snooze_Mode": {
+        "Minute": "分钟"
+    },
+    "Open_Snooze_Mode_Fuzzy": "无",
+    "Close_ScreenCast": "无",
+    "Open_ScreenCast": "无",
+    "Ask_Answer_Words": "无",
+    "Delete_Answer_Words": "无",
+    "Get_Answer": {
+        "Response": "应答词"
+    },
+    "Set_Voice_Style": {
+        "Style": "风格"
+    },
+    "Change_Timbre": "无",
+    "Close_Continuous_Dialogue": "无",
+    "Close_Free_Wakeup": "无",
+    "Close_Interactive_Learning": "无",
+    "Close_Sds_Config": "无",
+    "Close_Skill_Instruction": "无",
+    "Close_Voice_Wakeup": "无",
+    "Set_Continuous_Dialogue": {
+        "Time": "对话时长"
+    },
+    "Close_Online_NLU": "无",
+    "Open_Online_NLU": "无",
+    "Open_Continuous_Dialogue": "无",
+    "Open_Free_Wakeup": "无",
+    "Open_Interactive_Learning": "无",
+    "Open_Sds_Config": "无",
+    "Open_Skill_Instruction": "无",
+    "Open_Voice_Wakeup": "无",
+    "Main_And_Vice": "无",
+    "Only_Main": "无",
+    "Set_Timbre_Child": "无",
+    "Set_Timbre_Default": "无",
+    "Set_Timbre_Female": "无",
+    "Set_Timbre_Male": "无",
+    "Set_Voice": {
+        "Voice": "音色"
+    },
+    "View_Learning_Content": "无",
+    "Accelerate_Speed": "无",
+    "Slow_Speed": "无",
+    "Set_Speech_By_Speed": {
+        "speed": "语速"
+    },
+    "Ask_Wakeup_Words": "无",
+    "Delete_Wakeup_Words": "无",
+    "Set_Wakeup_Words": {
+        "Wake": "唤醒词"
+    },
+    "Close_App": {"app": "非多媒体应用"},
+    "Open_App": {"app": "非多媒体应用"},
+    "Close_App_List": "无",
+    "Close_System_Config": {
+        "One_Level": "一级菜单设置项",
+        "Two_Level": "二级菜单设置项"
+    },
+    "Open_App_List": "无",
+    "Open_System_Config": {
+        "One_Level": "一级菜单设置项",
+        "Two_Level": "二级菜单设置项"
+    },
+    "Close_Bluetooth": "无",
+    "Open_Bluetooth": "无",
+    "Dec_Brightness": {
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Set_Brightness_Min": "无",
+    "Inc_Brightness": {
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Set_Brightness_Max": "无",
+    "Set_Brightness": {
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Set_Card_Position":  {"Position": "位置"},
+    "Close_Flow": "无",
+    "Open_Flow": "无",
+    "Dec_DashBoard_Brightness": {
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Set_DashBoard_Brightness_Max": "无",
+    "Set_DashBoard_Brightness_Min": "无",
+    "Set_DashBoard_Brightness": {
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Inc_DashBoard_Brightness": {
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Set_Desktop_Style": {
+        "Desktop": "桌面样式"
+    },
+    "Back_To_Home": "无",
+    "Close_Spot": "无",
+    "Open_Spot": "无",
+    "Close_Screen": "无",
+    "Open_Screen": "无",
+    "Close_Phone_Connection": "无",
+    "Open_Phone_Connection": "无",
+    "Set_System_Theme_By_Mode": {
+        "mode": "系统主题"
+    },
+    "Dec_Sound_Volume": {
+        "Sound_Source": "音源",
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Inc_Sound_Volume": {
+        "Sound_Source": "音源",
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Set_Sound_Volume_Max": {
+        "Sound_Source": "音源"
+    },
+    "Set_Sound_Volume": {
+        "Sound_Source": "音源",
+        "Number": "number",
+        "Ratio": "ratio"
+    },
+    "Set_Sound_Volume_Min": {
+        "Sound_Source": "音源"
+    },
+    "Open_Sound_Volume": {
+        "Sound_Source": "音源"
+    },
+    "Close_WIFI": "无",
+    "Open_WIFI": "无",
+    "Create_Trip_Record": "无",
+    "Close_Record_App": "无",
+    "Open_Record_App": "无",
+    "Play_USB_Music": "无",
+    "Query_Destination_Weather": {"date": "date"},
+    "Temp_Compare": {
+        "City": "city"
+    },
+    "Ask_Air_Condition": {
+        "location": "city",
+        "date": "date",
+        "smog": "SMOG",
+        "PM25": "PM25"
+    },
+    "Ask_Bad_Weather": {
+        "location": "city",
+        "date": "date"
+    },
+    "Ask_Humidity": {
+        "location": "city",
+        "date": "date"
+    },
+    "Ask_Allergy": {
+        "location": "city",
+        "date": "date"
+    },
+    "Ask_Car_Wash": {
+        "location": "city",
+        "date": "date"
+    },
+    "Ask_Clothes": {
+        "location": "city",
+        "date": "date",
+        "dressing": "dressing",
+        "scarf": "scarf",
+        "hat": "hat",
+        "coat": "coat",
+        "t_shirt": "t_shirt"
+    },
+    "Ask_Cold_Index": {
+        "location": "city",
+        "date": "date"
+    },
+    "Ask_Fishing": {
+        "location": "city",
+        "date": "date"
+    },
+    "Ask_Makeup": {
+        "location": "city",
+        "date": "date"
+    },
+    "Ask_Sport": {
+        "location": "city",
+        "date": "date"
+    },
+    "Ask_Transport": {
+        "location": "city",
+        "date": "date"
+    },
+    "Ask_Travel": {
+        "location": "city",
+        "date": "date"
+    },
+    "Query_Date": {
+        "City": "city",
+        "License": "车牌"
+    },
+    "Query_Restrictions": {
+        "location": "city",
+        "date": "date"
+    },
+    "Query_UV_Level": {
+        "location": "city",
+        "date": "date",
+        "sunscreen": "SUNSCREEN"
+    },
+    "Query_Body_Temperature": {
+        "location": "city",
+        "date": "date"
+    },
+    "Query_Timely_Weather": {"location": "city"},
+    "Ask_Wind": {
+        "location": "city",
+        "date": "date",
+        "level": "风力",
+        "direction": "风向"
+    },
+    "Close_Weather": "无",
+    "Open_Weather": "无",
+    "Search_Music": {
+        "Name": "歌曲",
+        "charts": "榜单",
+        "Mood": "歌曲心情",
+        "Singer": "歌手",
+        "Singer2": "歌手2",
+        "Age": "歌曲年代",
+        "Language": "歌曲语言",
+        "album": "专辑",
+        "genre": "歌曲流派",
+        "location": "歌手地区",
+        "Style": "歌曲主题",
+        "Scene": "歌曲场景",
+        "Content": "儿童歌曲",
+        "type": "歌手类型",
+        "Keywords": "歌曲关键字",
+        "exclude": "排除歌曲",
+        "TV": "电视剧",
+        "variety_show": "综艺节目",
+        "Song": "歌曲"
+    },
+    "Search_Radio": {
+        "Type": "电台类型",
+        "Key": "电台关键词",
+        "Person": "主播名称",
+        "Name": "节目名称",
+        "Today": "实时"
+    },
+    "Search_News": {
+        "Type": "新闻类型",
+        "Key": "新闻关键字",
+        "Person": "新闻人物",
+        "Area": "新闻地区",
+        "Today": "实时"
+    },
+    "Go_POI": {
+        "POI": "POI",
+        "City": "city",
+        "Target": "landmark",
+        "index": "选项"
+    },
+    "Add_Via": {
+        "POI": "POI",
+        "Via": "途经点1",
+        "index": "选项"
+    },
+    "Play_Local_Radio": {
+        "FM": "FM",
+        "AM": "AM"
+    },
+    "Search_Station": {
+        "Type": "节目类型",
+        "Name": "节目名称"
+    },
+    "Query_Weather":{
+        "location": "city",
+        "date": "date",
+        "sun": "sun",
+        "rain": "rain",
+        "snow": "snow",
+        "fog": "fog",
+        "quilt": "quilt"
+    },
+    "List_Select": {
+        "Index": "选项"
+    },
+    "Confirm": "无",
+    "Cancel": "无",
+    "Open_K": "无",
+    "Close_K": "无",
+    "Select_Sing": {
+        "Singer": "歌手",
+        "Song": "歌曲"
+    },
+    "Check_Car_Condition": {
+        "Tire": "tire",
+        "gas": "gas",
+        "range": "range",
+        "total": "total",
+        "Maintenance": "Maintenance"
+    },
+    "Open_Bulter": "无",
+    "Close_Bulter": "无",
+    "Open_Training_Camp": "无",
+    "Close_Training_Camp": "无",
+    "Reserve_Maintenance": "无",
+    "Cancel_Reserve": "无"
+}
