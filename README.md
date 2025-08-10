@@ -37,7 +37,7 @@ source config/config.ini
 ## 模型训练或模型
 
 ### 直接使用训练好的模型
-下载[训练好的模型]()
+下载[训练好的模型](https://drive.google.com/drive/folders/1SDmqF-Nzf_zmj2F4Y-8VxvCGVxdntb5X?usp=drive_link)
 bert_tiny.ckpt 为6层bert的拒识模型，放入saved\reject
 bert.ckpt 为意图识别模型，放入saved\intent
 
