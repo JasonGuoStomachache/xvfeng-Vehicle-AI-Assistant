@@ -2,8 +2,6 @@
 
 <p align="center"> <img src="asset\flow.png" width="80%"> </p>
 
-
-
 ## 环境安装与变量导入
 ```bash
 conda create -n agent_nlu python=3.12
