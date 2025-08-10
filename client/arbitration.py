@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
 import time
 import json
 import os
@@ -20,7 +13,7 @@ TTL = 60
 CHUNK_SIZE = 1024
 MAX_TOKEN = 2048
 REDIS_KEY = "voice:arbitration_history:"
-_redis_client = RedisClient() 
+_redis_client = RedisClient()
 
 
 API_KEY = os.environ["API_KEY"]
@@ -29,10 +22,7 @@ SYSTEM_PROMPT = prompts.ARBITRAION_SYSTEM_PROMPT
 
 
 def request_arbitration(query, sender_id):
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": API_KEY
-    }
+    headers = {"Content-Type": "application/json", "Authorization": API_KEY}
     message = [{"role": "system", "content": SYSTEM_PROMPT}]
 
     try:
@@ -52,18 +42,15 @@ def request_arbitration(query, sender_id):
             messages=message,
             max_tokens=MAX_TOKEN,
             temperature=0,
-            stream=True
+            stream=True,
         )
         response = requests.post(
-            DOUBAO_URL,
-            headers=headers,
-            json=body,
-            stream=True,
-            timeout=TIMEOUT
+            DOUBAO_URL, headers=headers, json=body, stream=True, timeout=TIMEOUT
         )
         text = "A"
         for r in response.iter_lines(
-                chunk_size=CHUNK_SIZE, decode_unicode=False, delimiter=b'\n'):
+            chunk_size=CHUNK_SIZE, decode_unicode=False, delimiter=b"\n"
+        ):
             r = r.decode("utf-8")
             if not r:
                 continue
@@ -76,7 +63,8 @@ def request_arbitration(query, sender_id):
                 continue
             break
         logger.info(
-            f"Arbitration history: {history}, query:{query}, result:{text}, cost time:{time.time() - start_time}")
+            f"Arbitration history: {history}, query:{query}, result:{text}, cost time:{time.time() - start_time}"
+        )
         if text not in ["A", "B", "C", "D"]:
             text = "A"
         history.append({"role": "assistant", "content": text})
@@ -97,9 +85,8 @@ def request_arbitration(query, sender_id):
         return "task"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     while True:
         query = input("输入:")
         res = request_arbitration(query, "131")
         print(res)
-

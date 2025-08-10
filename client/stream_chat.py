@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
 import os
 import json
 import re
@@ -19,7 +12,7 @@ MAX_HIS = 6
 TTL = 45
 REMIND_TIMEOUT = 2.5
 REDIS_KEY = "voice:chat_history:{}"
-_redis_client = RedisClient() 
+_redis_client = RedisClient()
 
 
 DOUBAO_API_KEY = os.environ["API_KEY"]
@@ -36,29 +29,15 @@ def request_chat(query, sender_id, multiturn=True):
             history = []
     else:
         history = []
-    headers = {
-        "Authorization": DOUBAO_API_KEY, 
-        "Content-Type": "application/json"
-    }
-    messages_header = [
-        {"role": "system", "content": SYSTEM_PROMPT}
-    ]
-    messages_now = [
-        {"role": "user", "content": query}
-    ]
+    headers = {"Authorization": DOUBAO_API_KEY, "Content-Type": "application/json"}
+    messages_header = [{"role": "system", "content": SYSTEM_PROMPT}]
+    messages_now = [{"role": "user", "content": query}]
     messages = messages_header + history + messages_now
-    logger.info(f'request message:{messages}')
-    data = {
-        "model": "bot-20250227131955-snjfg",
-        "messages": messages,
-        "stream": True
-    }
+    logger.info(f"request message:{messages}")
+    data = {"model": "bot-20250227131955-snjfg", "messages": messages, "stream": True}
     try:
         response = requests.post(
-            DOUBAO_BOT_URL,
-            headers=headers,
-            data=json.dumps(data),
-            stream=True
+            DOUBAO_BOT_URL, headers=headers, data=json.dumps(data), stream=True
         )
         return response
     except Exception as e:
@@ -77,7 +56,9 @@ def process_chat(response, query, sender_id):
         counter = 1
         uttrance = ""
         answer = ""
-        for r in response.iter_lines(chunk_size=1, decode_unicode=False, delimiter=b'\n'):
+        for r in response.iter_lines(
+            chunk_size=1, decode_unicode=False, delimiter=b"\n"
+        ):
             r = r.decode("utf-8").strip()
             if not r:
                 continue
@@ -87,7 +68,7 @@ def process_chat(response, query, sender_id):
             text = r["choices"][0]["delta"]["content"]
             uttrance += text
             answer += text
-            if re.search('，|。|？|；', text):
+            if re.search("，|。|？|；", text):
                 yield uttrance
                 uttrance = ""
                 counter = 1
@@ -112,10 +93,9 @@ def process_chat(response, query, sender_id):
         _redis_client.set(REDIS_KEY.format(sender_id), history_str, ex=TTL)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     while 1:
         query = input("-->")
-        res = request_doubao_bot(query, '1', '2')
-        for frame in process_chat_bot(res, query, '1', time.time()):
+        res = request_doubao_bot(query, "1", "2")
+        for frame in process_chat_bot(res, query, "1", time.time()):
             print(frame)
-

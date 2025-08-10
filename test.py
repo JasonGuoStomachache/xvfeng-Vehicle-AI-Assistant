@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
 import os
 import requests
 import json
@@ -25,21 +18,25 @@ data_q = queue.Queue(2000)
 def on_connect():
     print("connected to server")
 
+
 @sio.on("disconnect")
 def on_disconnect():
     print("disconnected to server")
 
+
 @sio.on("message")
-def on_message(data):  
-    print('Received message:', data)  
+def on_message(data):
+    print("Received message:", data)
+
 
 @sio.on("error")
 def on_error(e):
-    print('Error:', e)  
+    print("Error:", e)
+
 
 @sio.on("request_nlu")
-def on_response(data):  
-    print('Response:', end="")
+def on_response(data):
+    print("Response:", end="")
     data = json.loads(data)
     data_q.put(data)
     print(data)
@@ -55,16 +52,14 @@ if __name__ == "__main__":
     fw = open("test/result/multi_test_output.txt", "w")
     for line in fd:
         sio.connect(URL)
-        data = {
-            "sender_id": rand_str(9)
-        }
+        data = {"sender_id": rand_str(9)}
         sessions = [t.strip() for t in line.split("\t") if t.strip()]
         for query in sessions:
             data["trace_id"] = rand_str(9)
             data["query"] = query
             data["enable_dm"] = False
             sio.emit("request_nlu", json.dumps(data, ensure_ascii=False))
-            
+
             result = {}
             result["query"] = query
             result["res"] = []
@@ -73,7 +68,11 @@ if __name__ == "__main__":
                 while True:
                     response = data_q.get()
                     result["res"].append(response)
-                    if response.get("intent") != "闲聊百科" or response.get("intent") == "闲聊百科" and response.get("status") == 2:
+                    if (
+                        response.get("intent") != "闲聊百科"
+                        or response.get("intent") == "闲聊百科"
+                        and response.get("status") == 2
+                    ):
                         break
                 break
 
@@ -83,4 +82,3 @@ if __name__ == "__main__":
         sio.disconnect()
 
     print("done")
-

@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
 import requests
 import json
 import time
@@ -17,13 +10,12 @@ from utils.redis_tool import RedisClient
 
 TIMEOUT = 2.0
 REDIS_KEY = "voice:last_service:{}"
-_redis_client = RedisClient() 
+_redis_client = RedisClient()
 
 DOUBAO_API_KEY = os.environ["API_KEY"]
 DOUBAO_URL = os.environ["BASE_URL"]
 CORRELATION_SYSTEM = prompts.CORRELATION_SYSTEM
 CORRELATION_PROMPT = prompts.CORRELATION_PROMPT
-
 
 
 def request_correlation(query, sender_id):
@@ -39,13 +31,10 @@ def request_correlation(query, sender_id):
         if last_reject == "N":
             return "否"
 
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": DOUBAO_API_KEY
-        }
+        headers = {"Content-Type": "application/json", "Authorization": DOUBAO_API_KEY}
         messages = [
             {"role": "system", "content": CORRELATION_SYSTEM},
-            {"role": "user", "content": CORRELATION_PROMPT.format(last_query, query)}
+            {"role": "user", "content": CORRELATION_PROMPT.format(last_query, query)},
         ]
 
         body = dict(
@@ -54,10 +43,7 @@ def request_correlation(query, sender_id):
             temperature=0,
         )
         response = requests.post(
-            DOUBAO_URL,
-            headers=headers,
-            json=body,
-            timeout=TIMEOUT
+            DOUBAO_URL, headers=headers, json=body, timeout=TIMEOUT
         )
         response = response.json()
         answer = response["choices"][0]["message"]["content"]
@@ -80,4 +66,3 @@ if __name__ == "__main__":
         query = input("输入：")
         res = request_correlation(query, sender_id)
         print(res)
-

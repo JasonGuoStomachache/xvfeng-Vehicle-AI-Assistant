@@ -1,29 +1,22 @@
-# -*- coding:utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
 import torch
 from tqdm import tqdm
 import time
 from datetime import timedelta
 
 
-PAD, CLS = '[PAD]', '[CLS]'  # padding符号, bert中综合信息符号
+PAD, CLS = "[PAD]", "[CLS]"  # padding符号, bert中综合信息符号
 
 
 def build_dataset(config):
 
     def load_dataset(path, pad_size=32):
         contents = []
-        with open(path, 'r', encoding='UTF-8') as f:
+        with open(path, "r", encoding="UTF-8") as f:
             for line in tqdm(f):
                 lin = line.strip()
                 if not lin or len(lin.split("\t")) != 2:
                     continue
-                content, label = lin.split('\t')
+                content, label = lin.split("\t")
                 token = config.tokenizer.tokenize(content)
                 token = [CLS] + token
                 seq_len = len(token)
@@ -33,13 +26,14 @@ def build_dataset(config):
                 if pad_size:
                     if len(token) < pad_size:
                         mask = [1] * len(token_ids) + [0] * (pad_size - len(token))
-                        token_ids += ([0] * (pad_size - len(token)))
+                        token_ids += [0] * (pad_size - len(token))
                     else:
                         mask = [1] * pad_size
                         token_ids = token_ids[:pad_size]
                         seq_len = pad_size
                 contents.append((token_ids, int(label), seq_len, mask))
         return contents
+
     train = load_dataset(config.train_path, config.pad_size)
     dev = load_dataset(config.dev_path, config.pad_size)
     test = load_dataset(config.test_path, config.pad_size)
@@ -68,7 +62,7 @@ class DatasetIterater(object):
 
     def __next__(self):
         if self.residue and self.index == self.n_batches:
-            batches = self.batches[self.index * self.batch_size: len(self.batches)]
+            batches = self.batches[self.index * self.batch_size : len(self.batches)]
             self.index += 1
             batches = self._to_tensor(batches)
             return batches
@@ -77,7 +71,9 @@ class DatasetIterater(object):
             self.index = 0
             raise StopIteration
         else:
-            batches = self.batches[self.index * self.batch_size: (self.index + 1) * self.batch_size]
+            batches = self.batches[
+                self.index * self.batch_size : (self.index + 1) * self.batch_size
+            ]
             self.index += 1
             batches = self._to_tensor(batches)
             return batches

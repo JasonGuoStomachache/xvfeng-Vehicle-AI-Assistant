@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
 import os
 import json
 import re
@@ -19,15 +12,12 @@ MAX_HISTORY = 6
 DOUBAO_API_KEY = os.environ["API_KEY"]
 DOUBAO_URL = os.environ["BASE_URL"]
 REDIS_KEY = "voice:rewrite_history:{}"
-_redis_client = RedisClient() 
+_redis_client = RedisClient()
 
 
 def request_rewrite(query, last_answer, sender_id):
 
-    headers = {
-        "Authorization": DOUBAO_API_KEY,
-        "Content-Type": "application/json"
-    }
+    headers = {"Authorization": DOUBAO_API_KEY, "Content-Type": "application/json"}
     history = _redis_client.get(REDIS_KEY.format(sender_id))
     if history:
         history = json.loads(history)
@@ -38,13 +28,11 @@ def request_rewrite(query, last_answer, sender_id):
     if history and last_answer:
         history[-1]["content"] = last_answer
 
-    messages_header = [
-        {"role": "system", "content": prompts.REWRITE_SYSTEM_PROMPT}
-    ]
+    messages_header = [{"role": "system", "content": prompts.REWRITE_SYSTEM_PROMPT}]
     if not history:
         result = "否"
     else:
-        split_history = [history[i:i+2] for i in range(0, len(history), 2)]
+        split_history = [history[i : i + 2] for i in range(0, len(history), 2)]
         history_msgs = []
         for index, item in enumerate(split_history):
             if index == len(split_history) - 1:
@@ -62,9 +50,7 @@ def request_rewrite(query, last_answer, sender_id):
 
         prompt = "#对话历史#\n{}\nA：{}\n".format(history_msgs, query)
         logger.info(f"对话历史：{prompt}")
-        messages_now = [
-            {"role": "user", "content": prompt}
-        ]
+        messages_now = [{"role": "user", "content": prompt}]
         messages = messages_header + messages_now
 
         data = {
@@ -79,9 +65,9 @@ def request_rewrite(query, last_answer, sender_id):
             headers=headers,
             data=json.dumps(data),
         )
-        res = response.content.decode('utf-8')
+        res = response.content.decode("utf-8")
         res = json.loads(res)
-        result = res['choices'][0]['message']['content']
+        result = res["choices"][0]["message"]["content"]
 
         # 防止误改
         if len(set(result).intersection(query)) < len(query) / 4:
@@ -95,6 +81,8 @@ def request_rewrite(query, last_answer, sender_id):
     history.append({"role": "user", "content": result})
     history.append({"role": "assistant", "content": ""})
 
-    _redis_client.set(REDIS_KEY.format(sender_id), json.dumps(history, ensure_ascii=False), ex=TTL)
+    _redis_client.set(
+        REDIS_KEY.format(sender_id), json.dumps(history, ensure_ascii=False), ex=TTL
+    )
 
     return result

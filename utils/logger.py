@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
 # File: logger.py
 
 """
@@ -24,7 +17,7 @@ from logging import LoggerAdapter
 
 __all__ = []
 
-levelname = os.environ.get('LOG_LEVEL', "INFO")
+levelname = os.environ.get("LOG_LEVEL", "INFO")
 
 _LEVEL_SET = {"DEBUG": 10, "INFO": 20, "WARN": 30, "ERROR": 40}
 _LOGGING_METHOD = ["info", "warning", "error", "debug"]
@@ -44,15 +37,15 @@ class _Formatter(logging.Formatter):
 class _SesssionLoggerAdapter(LoggerAdapter):
 
     def process(self, msg, kwargs):
-        if 'session' not in self.extra or self.extra['session'] is None:
+        if "session" not in self.extra or self.extra["session"] is None:
             return msg, kwargs
-        session = self.extra['session']
-        if hasattr(session, 'trace_id'):
-            msg = '{} {}'.format(session.trace_id, msg)
-        if 'extra' not in kwargs:
+        session = self.extra["session"]
+        if hasattr(session, "trace_id"):
+            msg = "{} {}".format(session.trace_id, msg)
+        if "extra" not in kwargs:
             kwargs["extra"] = self.extra
         else:
-            kwargs['extra'].update(self.extra)
+            kwargs["extra"].update(self.extra)
         return super().process(msg, kwargs)
 
 
@@ -68,7 +61,7 @@ def Singleton(cls):
 
 
 @Singleton
-class Session():
+class Session:
     def __init__(self):
         super().__init__()
 
@@ -98,11 +91,10 @@ session = Session()
 
 # Logger instance
 _logger = _getlogger()
-_logger = _SesssionLoggerAdapter(_logger, {'session': session})
+_logger = _SesssionLoggerAdapter(_logger, {"session": session})
 
 
 # Export logger functions
 for func in _LOGGING_METHOD:
     locals()[func] = getattr(_logger, func)
     __all__.append(func)
-

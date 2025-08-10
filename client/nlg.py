@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
 import requests
 import json
 import time
@@ -22,10 +15,7 @@ NLG_PROMPT = prompts.NLG_PROMPT
 
 def request_nlg(query, tool_response):
     try:
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": DOUBAO_API_KEY
-        }
+        headers = {"Content-Type": "application/json", "Authorization": DOUBAO_API_KEY}
         messages = [
             {"role": "user", "content": NLG_PROMPT.format(query, tool_response)}
         ]
@@ -35,10 +25,7 @@ def request_nlg(query, tool_response):
             messages=messages,
         )
         response = requests.post(
-            DOUBAO_URL,
-            headers=headers,
-            json=body,
-            timeout=TIMEOUT
+            DOUBAO_URL, headers=headers, json=body, timeout=TIMEOUT
         )
         response = response.json()
         answer = response["choices"][0]["message"]["content"]
@@ -51,10 +38,9 @@ def request_nlg(query, tool_response):
 
 
 if __name__ == "__main__":
-    
+
     query = "今天天气怎么样"
     tool_response = "城市：北京市\n天气：阴\n温度：21度\n风向：东北\n风力：1-3级"
 
     res = request_nlg(query, tool_response)
     print(res)
-

@@ -1,10 +1,3 @@
-# -*- coding:utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
 import os
 import requests
 import uuid
@@ -17,12 +10,13 @@ URL = os.environ["REJECT_URL"]
 
 
 def get_completion(query):
-    headers = {'Content-Type': 'application/json'}
+    headers = {"Content-Type": "application/json"}
     data = {"query": query, "thres": THRSHOLD, "trace_id": str(uuid.uuid1())}
     response = requests.post(url=URL, headers=headers, data=json.dumps(data))
     return response.json()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     fd = open("../train/data/reject/test.txt")
     data = fd.readlines()
     right = 0
@@ -36,4 +30,4 @@ if __name__ == '__main__':
         if response["data"] == label:
             right += 1
         total += 1
-    print("test avg acc:", right/total)
+    print("test avg acc:", right / total)

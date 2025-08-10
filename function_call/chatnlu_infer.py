@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
-
 import os
 import json
 import uuid
@@ -37,7 +29,7 @@ DOUBAO_URL = os.environ["BASE_URL"]
 id2func = {}
 func2name = {}
 name2id = {}
-with open("../config/class.txt", 'r', encoding='utf-8') as mapfile:
+with open("../config/class.txt", "r", encoding="utf-8") as mapfile:
     for line in mapfile:
         id, name, func = line.strip().split(":")
         id2func[id] = func
@@ -58,34 +50,28 @@ with open("../config/slot_intent.json", "r", encoding="utf-8") as slotfile:
 
 
 def send_messages(messages, tool_lst):
-    headers = {
-        "Authorization": DOUBAO_API_KEY,
-        "Content-Type": "application/json"
-    }
+    headers = {"Authorization": DOUBAO_API_KEY, "Content-Type": "application/json"}
     data = {
         "model": "ep-20250106153928-kh8t7",
         "messages": messages,
         "tools": tool_lst,
         "temperature": 1e-6,
-        "top_p": 0
+        "top_p": 0,
     }
     try:
         response = requests.post(
-            DOUBAO_URL,
-            headers=headers,
-            data=json.dumps(data),
-            timeout=TIMEOUT
+            DOUBAO_URL, headers=headers, data=json.dumps(data), timeout=TIMEOUT
         )
-        res = response.content.decode('utf-8')
+        res = response.content.decode("utf-8")
         res = json.loads(res)
-        return res['choices'][0]['message']['tool_calls']
+        return res["choices"][0]["message"]["tool_calls"]
     except Exception as e:
         logger.error(f"Doubao error: {e}")
         return None
 
 
 def intent_recall(query, trace_id):
-    headers = {'Content-Type': 'application/json'}
+    headers = {"Content-Type": "application/json"}
     data = {"query": query, "trace_id": str(uuid.uuid1())}
     response = requests.post(url=INTENT_URL, headers=headers, data=json.dumps(data))
     return response.json()
@@ -142,7 +128,6 @@ async def inference(request: Request):
     # 抽取意图和槽位
     nlu = predict(query, trace_id)
 
-
     # NLU后处理
     nlu_items = nlu.split("-")
     intent = nlu_items[0]
@@ -162,8 +147,7 @@ async def inference(request: Request):
     else:
         slots = {}
     intent_id = name2id.get(intent)
-    func_name = id2func.get(intent_id) 
-
+    func_name = id2func.get(intent_id)
 
     response = {
         "query": query,
@@ -187,5 +171,6 @@ async def inference(request: Request):
 
     return response
 
-if __name__ == '__main__':
-    uvicorn.run(app, host='0.0.0.0', port=8009, workers=1)
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8009, workers=1)

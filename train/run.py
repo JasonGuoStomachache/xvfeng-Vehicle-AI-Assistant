@@ -1,12 +1,5 @@
-# -*- coding:utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
 """
-    usage: python run.py --model bert --data intent
+usage: python run.py --model bert --data intent
 """
 
 import time
@@ -18,16 +11,20 @@ import argparse
 from data_helper import build_dataset, build_iterator, get_time_dif
 from utils import logger
 
-parser = argparse.ArgumentParser(description='Chinese Text Classification')
-parser.add_argument('--model', type=str, required=True, help='choose a model: bert, bert_tiny')
-parser.add_argument('--data', type=str, required=True, help='choose a dataset: reject, intent')
+parser = argparse.ArgumentParser(description="Chinese Text Classification")
+parser.add_argument(
+    "--model", type=str, required=True, help="choose a model: bert, bert_tiny"
+)
+parser.add_argument(
+    "--data", type=str, required=True, help="choose a dataset: reject, intent"
+)
 args = parser.parse_args()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     dataset = args.data  # 数据集
     model_name = args.model  # 模型
-    x = import_module('models.' + model_name)
+    x = import_module("models." + model_name)
     config = x.Config(dataset)
 
     # 设置随机数种子

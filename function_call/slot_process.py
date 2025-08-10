@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-# --------------------------------------------
-# 项目名称: LLM任务型对话Agent
-# 版权所有  ©2025丁师兄大模型
-# 生成时间: 2025-05
-# --------------------------------------------
-
 import json
 
 
@@ -28,11 +21,11 @@ def value_process(key, value):
         "吹窗吹脚": "WINDOW_AND_FOOT",
         "左前": "MAIN",
         "右前": "VICE",
-        "主副驾": "FRONT"
+        "主副驾": "FRONT",
     }
     if key in ["NUMBER", "RATIO"]:
-        if '%' in value:
-            value = float(eval(value.replace('%', '')) / 100)
+        if "%" in value:
+            value = float(eval(value.replace("%", "")) / 100)
         else:
             value = float(eval(value))
     elif key in ["POSITION"]:
