@@ -42,9 +42,9 @@ bert_tiny.ckpt 为6层bert的拒识模型，放入saved\reject
 bert.ckpt 为意图识别模型，放入saved\intent
 
 ### 自行训练
-训练拒识/意图识别模型（示例训练log：log\reject.log）
+训练拒识/意图识别模型（train\run.py）
 ```
-python ./train/run.py --model bert_tiny --data reject
+python train\run.py --model bert_tiny --data reject
 ```
 
 
